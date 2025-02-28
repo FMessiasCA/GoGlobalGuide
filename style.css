@@ -30,10 +30,15 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
+    color: var(--text-secondary);
+
+    background-color: var(--bg-default);
 }
 
-h1, h2, h3, h4 {
-    font-weight: bold;
+h1,
+h2,
+h3 {
+    color: var(--text-primary);
 }
 
 h1 {
@@ -48,12 +53,37 @@ h3 {
     font-size: 2.8rem;
 }
 
-h4 /* headline */{
+h4
+
+/* headline */
+    {
     font-size: 1.6rem;
     text-transform: uppercase;
     color: var(--text-headline);
 }
 
-subtitle {
+/* Page */
+
+#page {
+    margin: 8.8rem 8rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 28px;
+}
+
+figcaption {
     font-style: italic;
+    color: var(--text-secondary);
+    text-align: center;
+}
+
+main {
+    border-top: 1px solid var(--border-default);
+    border-bottom: 1px solid var(--border-default);
 }
