@@ -53,10 +53,7 @@ h3 {
     font-size: 2.8rem;
 }
 
-h4
-
-/* headline */
-    {
+h4 {
     font-size: 1.6rem;
     text-transform: uppercase;
     color: var(--text-headline);
@@ -86,4 +83,50 @@ figcaption {
 main {
     border-top: 1px solid var(--border-default);
     border-bottom: 1px solid var(--border-default);
+    margin-bottom: 4rem;
+}
+
+main section:nth-child(1) {
+    margin-block: 6.4rem;
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+main section article .articleCard img {
+    height: 35vh;
+}
+
+.articleCard ul {
+    margin-top: 2rem;
+}
+
+.articleCard ul li {
+    margin-left: 2rem;
+}
+
+.articleCard ul li::marker {
+    color: var(--accent-blue);
+}
+
+#page>section {
+    text-align: center;
+}
+
+footer {
+    margin: 6.5rem 0 4.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+footer p:first-child, footer p span {
+    color: var(--accent-pink);
+    font-weight: bold;
 }
